@@ -36,7 +36,7 @@ fun intro_nand where
          NAND (intro_nand c1) (intro_nand c2))"
 | "intro_nand (NOT c) = NAND (intro_nand c) TRUE"
 | "intro_nand TRUE = TRUE"
-| "intro_nand FALSE = NAND TRUE FALSE"
+| "intro_nand FALSE = NAND TRUE TRUE"
 | "intro_nand (INPUT i) = INPUT i"
 
 
